@@ -23,11 +23,11 @@ cp -f patch/mac80211.sh package/kernel/mac80211/files/lib/wifi
 sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 
 #修改内核版本
-sed -i s/5.15/5.4/g target/linux/ipq807x/Makefile
+sed -i s/5.15/5.10/g target/linux/ipq807x/Makefile
 
 #更换版本
 rm -rf package/qca/nss/qca-ssdk
-cp -Rf patch/qca/qca-ssdk package/qca/nss
+cp -rf patch/qca/qca-ssdk package/qca/nss
 
 #添加额外非必须软件包
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
