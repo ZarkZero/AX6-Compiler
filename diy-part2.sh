@@ -31,9 +31,9 @@ rm -rf package/qca/nss/qca-nss-dp
 rm -rf package/qca/nss/qca-nss-clients
 rm -rf package/qca/nss/qca-nss-ecm
 rm -rf package/qca/nss/qca-nss-drv
-cp -rf patch/qca/qca-nss-clients-64 package/qca/nss
-cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
-cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
+#cp -rf patch/qca/qca-nss-clients-64 package/qca/nss
+#cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
+#cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
 #cp -rf patch/qca/qca-ssdk package/qca/nss
 
 
