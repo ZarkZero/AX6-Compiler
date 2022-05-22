@@ -27,6 +27,7 @@ sed -i s/5.15/5.4/g target/linux/ipq807x/Makefile
 
 #更换版本
 rm -rf package/qca/nss/qca-ssdk
+rm -rf package/qca/nss/qca-nss-dp
 #cp -rf patch/qca/qca-ssdk package/qca/nss
 
 #添加额外非必须软件包
