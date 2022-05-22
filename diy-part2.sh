@@ -27,7 +27,7 @@ sed -i s/5.15/5.10/g target/linux/ipq807x/Makefile
 
 #更换版本
 rm -rf package/qca/nss/qca-ssdk
-cp -rf patch/qca/qca-ssdk package/qca/nss
+#cp -rf patch/qca/qca-ssdk package/qca/nss
 
 #添加额外非必须软件包
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
