@@ -21,6 +21,7 @@
 svn co https://github.com/ZarkZero/AX6-Compiler/trunk/patch
 cp -f patch/mac80211.sh package/kernel/mac80211/files/lib/wifi
 sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
+sed -i s#Boos4721/packages.git#coolsnowwolf/packages.git#g feeds.conf.default
 
 #修改内核版本
 sed -i s/5.15/5.10/g target/linux/ipq807x/Makefile
