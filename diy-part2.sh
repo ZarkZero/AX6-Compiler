@@ -28,7 +28,7 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 sed -i s/5.15/5.10/g target/linux/ipq807x/Makefile
 
 #更换版本
-#rm -rf package/qca/nss/qca-ssdk
+rm -rf package/qca/nss/qca-ssdk
 #rm -rf package/qca/nss/qca-nss-dp
 rm -rf package/qca/nss/qca-nss-clients
 rm -rf package/qca/nss/qca-nss-ecm
