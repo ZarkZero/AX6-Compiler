@@ -36,7 +36,7 @@ rm -rf package/qca/nss/qca-nss-drv
 cp -rf patch/qca/qca-nss-clients-64 package/qca/nss
 cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
 cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
-#cp -rf patch/qca/qca-ssdk package/qca/nss
+cp -rf patch/qca/qca-ssdk package/qca/nss
 cp -rf patch/ipq807x target/linux
 
 #添加额外非必须软件包
