@@ -25,19 +25,19 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 #sed -i s#github.com/Boos4721/packages.git#git.openwrt.org/feed/packages.git#g feeds.conf.default
 
 #修改内核版本
-sed -i s/5.15/5.10/g target/linux/ipq807x/Makefile
+#sed -i s/5.15/5.10/g target/linux/ipq807x/Makefile
 
 #更换版本
-rm -rf package/qca/nss/qca-ssdk
-rm -rf package/qca/nss/qca-nss-dp
+#rm -rf package/qca/nss/qca-ssdk
+#rm -rf package/qca/nss/qca-nss-dp
 rm -rf package/qca/nss/qca-nss-clients
 rm -rf package/qca/nss/qca-nss-ecm
 rm -rf package/qca/nss/qca-nss-drv
-cp -rf patch/qca/qca-nss-clients-64 package/qca/nss
-cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
-cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
-cp -rf patch/qca/qca-ssdk package/qca/nss
-cp -rf patch/ipq807x target/linux
+#cp -rf patch/qca/qca-nss-clients-64 package/qca/nss
+#cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
+#cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
+#cp -rf patch/qca/qca-ssdk package/qca/nss
+#cp -rf patch/ipq807x target/linux
 
 #添加额外非必须软件包
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
