@@ -24,6 +24,7 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 #sed -i s#Boos4721/packages.git#coolsnowwolf/packages.git#g feeds.conf.default
 #sed -i s#github.com/Boos4721/packages.git#git.openwrt.org/feed/packages.git#g feeds.conf.default
 
+
 #修改内核版本
 #sed -i s/5.10/5.4/g target/linux/ipq807x/Makefile
 #sed -i s/110/115/g include/kernel-5.10.mk
@@ -49,7 +50,7 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 
 #添加额外非必须软件包
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
-
+rm -rf package/openwrt-packages/firewall
 
 #Custom Theme
 #svn co https://github.com/harry3633/openwrt-package/trunk/lienol/luci-theme-bootstrap-mod package/openwrt-packages/luci-theme-bootstrap-mod
