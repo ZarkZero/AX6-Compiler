@@ -44,7 +44,7 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 #cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
 #cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
 #cp -rf patch/qca/qca-ssdk package/qca/nss
-#cp -rf patch/ipq807x target/linux
+cp -rf patch/ipq807x target/linux
 #cp -rf patch/ipq807x/patches-5.4 target/linux/ipq807x
 #cp -rf patch/ipq807x/config-5.4 target/linux/ipq807x
 
