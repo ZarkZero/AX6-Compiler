@@ -26,7 +26,7 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 
 
 #修改内核版本
-sed -i s/5.15/5.4/g target/linux/ipq807x/Makefile
+sed -i s/5.15/5.10/g target/linux/ipq807x/Makefile
 #sed -i s/110/115/g include/kernel-5.10.mk
 #sed -i s/dbef6a06325433481551cb8cfca9254d908d0ae950bc809f3da8ade00c485693/f5e417b32f89318b6d0a230109a592ffd68997817463dc4692fa49ec7fe42f71/g include/kernel-5.10.mk
 #sed -i s/6f8631b6c382a2b0cfeff1e5f8805c8e1cfbe8d714b6e65f5bb79733c99068eb/f5e417b32f89318b6d0a230109a592ffd68997817463dc4692fa49ec7fe42f71/g include/kernel-version.mk
@@ -35,7 +35,7 @@ sed -i s/5.15/5.4/g target/linux/ipq807x/Makefile
 
 #更换版本
 #rm -rf package/qca/nss/qca-ssdk
-#rm -rf package/qca/nss/qca-nss-dp
+rm -rf package/qca/nss/qca-nss-dp
 #rm -rf package/qca/nss/qca-nss-clients
 #rm -rf package/qca/nss/qca-nss-ecm
 #rm -rf package/qca/nss/qca-nss-drv
@@ -44,7 +44,7 @@ sed -i s/5.15/5.4/g target/linux/ipq807x/Makefile
 #cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
 #cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
 #cp -rf patch/qca/qca-ssdk package/qca/nss
-#cp -rf patch/ipq807x target/linux
+cp -rf patch/ipq807x target/linux
 #cp -rf patch/ipq807x/patches-5.4 target/linux/ipq807x
 #cp -rf patch/ipq807x/config-5.4 target/linux/ipq807x
 
