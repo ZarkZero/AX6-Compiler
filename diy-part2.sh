@@ -51,6 +51,7 @@ rm -rf package/qca/nss/qca-nss-drv
 #添加额外非必须软件包
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 rm -rf package/openwrt-packages/firewall
+rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
 
 #Custom Theme
 #svn co https://github.com/harry3633/openwrt-package/trunk/lienol/luci-theme-bootstrap-mod package/openwrt-packages/luci-theme-bootstrap-mod
