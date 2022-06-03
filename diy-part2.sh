@@ -45,13 +45,14 @@ rm -rf package/qca/nss/qca-nss-drv
 #cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
 #cp -rf patch/qca/qca-ssdk package/qca/nss
 cp -rf patch/ipq807x target/linux
+cp -f patch/ipq807x/arch/ipq8074-ess.dtsi target/linux/ipq807x/files/arch/arm64/boot/dts/qcom
 #cp -rf patch/ipq807x/patches-5.4 target/linux/ipq807x
 #cp -rf patch/ipq807x/config-5.4 target/linux/ipq807x
 
 #添加额外非必须软件包
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 rm -rf package/openwrt-packages/firewall
-rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
+#rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
 
 #Custom Theme
 #svn co https://github.com/harry3633/openwrt-package/trunk/lienol/luci-theme-bootstrap-mod package/openwrt-packages/luci-theme-bootstrap-mod
