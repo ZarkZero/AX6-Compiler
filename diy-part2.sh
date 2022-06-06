@@ -41,6 +41,7 @@ rm -rf package/qca/nss/qca-nss-ecm
 rm -rf package/qca/nss/qca-nss-drv
 rm -rf package/qca/nss/qca-nss-drv-64
 #rm -rf package/qca/nss/qca-nss-clients-64
+rm -rf package/qca/nss/qca-nss-ecm-64
 #cp -rf patch/qca/qca-nss-clients-64 package/qca/nss
 #cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
 #cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
