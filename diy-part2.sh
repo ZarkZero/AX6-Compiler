@@ -37,10 +37,10 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 #rm -rf package/qca/nss/qca-ssdk
 #rm -rf package/qca/nss/qca-nss-dp
 #rm -rf package/qca/nss/qca-nss-clients
-rm -rf package/qca/nss/qca-nss-ecm
-rm -rf package/qca/nss/qca-nss-drv
+#rm -rf package/qca/nss/qca-nss-ecm
+#rm -rf package/qca/nss/qca-nss-drv
 #rm -rf package/qca/nss/qca-nss-drv-64
-rm -rf package/qca/nss/qca-nss-clients-64
+#rm -rf package/qca/nss/qca-nss-clients-64
 #rm -rf package/qca/nss/qca-nss-ecm-64
 #cp -rf patch/qca/qca-nss-clients-64 package/qca/nss
 #cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
@@ -56,7 +56,7 @@ rm -rf package/qca/nss/qca-nss-clients-64
 #添加额外非必须软件包
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 rm -rf package/openwrt-packages/firewall
-rm -rf package/openwrt-packages/fullconenat
+#rm -rf package/openwrt-packages/fullconenat
 #rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
 
 #Custom Theme
