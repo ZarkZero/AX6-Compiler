@@ -56,6 +56,7 @@ rm -rf package/qca/nss/qca-nss-ecm-64
 #添加额外非必须软件包
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 rm -rf package/openwrt-packages/firewall
+rm -rf package/openwrt-packages/fullconenat
 #rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
 
 #Custom Theme
