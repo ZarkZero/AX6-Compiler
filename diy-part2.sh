@@ -34,8 +34,8 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 
 
 #更换版本
-rm -rf package/qca/nss/qca-ssdk
-rm -rf package/qca/nss/qca-nss-dp
+#rm -rf package/qca/nss/qca-ssdk
+#rm -rf package/qca/nss/qca-nss-dp
 #rm -rf package/qca/nss/qca-nss-clients
 #rm -rf package/qca/nss/qca-nss-ecm
 #rm -rf package/qca/nss/qca-nss-drv
