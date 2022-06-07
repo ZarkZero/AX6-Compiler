@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build 5.10-DEV-AX6
+name: Build 5.10.110-AX6
 
 on:
   repository_dispatch:
@@ -20,8 +20,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/robimarko/openwrt
-  REPO_BRANCH: IPQ807x-5.10-backports
+  REPO_URL: https://github.com/ZarkZero/boos
+  REPO_BRANCH: test
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: AX6-5.10.config
   DIY_P1_SH: diy-part1.sh
