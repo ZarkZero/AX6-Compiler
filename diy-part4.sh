@@ -22,7 +22,7 @@ rm -rf package/qca/nss/qca-nss-dp
 #rm -rf package/qca/nss/qca-nss-clients
 rm -rf package/qca/nss/qca-nss-ecm
 rm -rf package/qca/nss/qca-nss-drv
-#rm -rf package/qca/nss/qca-nss-drv-64
+rm -rf package/qca/nss/qca-nss-drv-64
 rm -rf package/qca/nss/qca-nss-clients-64
 #rm -rf package/qca/nss/qca-nss-ecm-64
 
