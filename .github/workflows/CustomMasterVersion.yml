@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: AX6-Kernel-Custom
+name: AX6-Master-Custom
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -20,7 +20,7 @@ on:
 
 env:
   REPO_URL: https://github.com/ZarkZero/boos
-  REPO_BRANCH: test
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: AX6-Kernel-Custom.config
   DIY_P1_SH: diy-part1.sh
