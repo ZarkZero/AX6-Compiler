@@ -19,6 +19,4 @@
 
 # 修正Package/Makefile
 sed -i s#system/opkg#opkg#g package/Makefile
-sed -i s/64/1/g package/base-files/files/bin/config_generate
-sed -i s/UTC/CST-8/g package/base-files/files/bin/config_generate
 svn co https://github.com/ZarkZero/AX6-Compiler/trunk/config files
