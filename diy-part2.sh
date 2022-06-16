@@ -54,7 +54,7 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 #cp -rf patch/ipq807x/config-5.4 target/linux/ipq807x
 
 #添加额外非必须软件包
-#git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 rm -rf package/openwrt-packages/firewall
 #rm -rf package/openwrt-packages/fullconenat
 #rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
