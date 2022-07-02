@@ -112,6 +112,19 @@ jobs:
     - name: Check space usage
       if: (!cancelled())
       run: df -hT
+      
+    - name: Achieve
+      if: (!cancelled())
+      run: |
+        mkdir upload
+        tar -czf upload/qsdk-cache.tar.gz openwrt/*
+
+    - name: Upload Process
+      uses: actions/upload-artifact@main
+      if: (!cancelled())
+      with:
+        name: cache
+        path: upload
 
     - name: Upload bin directory
       uses: actions/upload-artifact@main
