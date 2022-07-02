@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: AX6 Almighty Edition-boos-stable
+name: AX6 QSDK-11.5
 
 on:
   repository_dispatch:
