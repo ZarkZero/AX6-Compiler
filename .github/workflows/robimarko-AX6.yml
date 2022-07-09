@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build 5.15-DEV-AX6
+name: Build robimarko-5.15-DEV-AX6
 
 on:
   repository_dispatch:
@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/robimarko/openwrt
-  REPO_BRANCH: ipq807x-5.15
+  REPO_BRANCH: ipq807x-5.15-pr
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: AX6-5.15.config
   DIY_P1_SH: diy-part1.sh
@@ -40,15 +40,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-
-    - name: Compile Automake
-      run: |
-        curl -sLO https://mirrors.tuna.tsinghua.edu.cn/gnu/automake/automake-1.16.3.tar.gz
-        tar -xzf automake-1.16.3.tar.gz
-        cd automake-1.16.3
-        ./configure
-        make
-        sudo make install
 
     - name: Initialization environment
       env:
@@ -111,17 +102,7 @@ jobs:
       id: compile
       run: |
         cd openwrt
-        rm -rf package/boos-packages/qca-ssdk
-        rm -rf feeds/nss_packages/qca/qca-ssdk
-        rm -rf feeds/nss_packages/qca/qca-nss-dp
-        rm -rf feeds/nss_packages/qca/qca-nss-ecm
-        rm -rf package/boos-packages/qca-nss-dp
-        rm -rf package/boos-packages/qca-nss-drv-64
-        rm -rf package/boos-packages/qca-nss-clients-64
-        rm -rf package/boos-packages/qca-nss-ecm-64
-        rm -rf feeds/nss_packages/qca/qca-mcs
-        rm -rf package/boos-packages/qca-mcs
-        make -j$(nproc) || make -j2 || make -j2 V=s
+        make -j$(nproc) || make -j1 || make -j1 V=s
         echo "::set-output name=status::success"
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
         [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
