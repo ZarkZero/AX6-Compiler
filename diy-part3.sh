@@ -28,6 +28,7 @@
 #git clone https://github.com/kenzok8/small-package package/small-package
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 rm -rf package/openwrt-packages/firewall
+rm -rf package/openwrt-packages/shortcut-fe
 
 
 #Custom Theme
@@ -44,8 +45,8 @@ rm -rf package/openwrt-packages/firewall
 #svn co https://github.com/kenzok8/small-package/trunk/luci-app-argonne-config package/openwrt-packages/luci-app-argonne-config
 
 #Custom Package
-svn co https://github.com/Boos4721/openwrt/trunk/package/qca/nss/qca-rfs package/boos-nss-packages/qca-rfs
-svn co https://github.com/Boos4721/openwrt/trunk/package/qca/nss/qca-nss-gmac package/boos-nss-packages/qca-nss-gmac
+svn co https://github.com/Boos4721/openwrt/trunk/package/qca/nss/qca-rfs package/qca/qca-rfs
+svn co https://github.com/Boos4721/openwrt/trunk/package/qca/nss/qca-nss-gmac package/qca/qca-nss-gmac
 
 #git clone https://github.com/fullcone-nat-nftables/nft-fullcone package/custom
 #svn co https://github.com/wongsyrone/lede-1/trunk/package/network/utils/nftables package/network/utils/nftables
