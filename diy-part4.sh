@@ -22,9 +22,11 @@ rm -rf package/qca/nss/qca-nss-drv
 #rm -rf package/qca/nss/qca-nss-ecm-64
 #rm -rf package/qca/nss/qca-nss-dp
 #svn co https://github.com/robimarko/nss-packages/trunk/qca/qca-nss-dp package/qca/nss/qca-nss-dp
-svn co https://github.com/Boos4721/openwrt/trunk/package/firmware/ath11k-board package/qca/ath11k-board
+
 
 #添加额外非必须软件包
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 rm -rf package/openwrt-packages/firewall
-rm -rf package/openwrt-packages/shortcut-fe
+#rm -rf package/openwrt-packages/shortcut-fe
+svn co https://github.com/Boos4721/openwrt/trunk/package/firmware/ath11k-board package/openwrt-packages/ath11k-board
+#svn co https://github.com/Boos4721/openwrt/trunk/package/lean/shortcut-fe package/openwrt-packages/shortcut-fe
