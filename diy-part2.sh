@@ -36,15 +36,15 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 #更换版本
 #rm -rf package/qca/nss/qca-ssdk
 #rm -rf package/qca/nss/qca-nss-dp
-rm -rf package/qca/nss/qca-nss-clients
-rm -rf package/qca/nss/qca-nss-ecm
-rm -rf package/qca/nss/qca-nss-drv
+#rm -rf package/qca/nss/qca-nss-clients
+#rm -rf package/qca/nss/qca-nss-ecm
+#rm -rf package/qca/nss/qca-nss-drv
 #rm -rf package/qca/nss/qca-nss-drv-64
 #rm -rf package/qca/nss/qca-nss-clients-64
 #rm -rf package/qca/nss/qca-nss-ecm-64
-cp -rf patch/qca/qca-nss-clients-64 package/qca/nss
-cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
-cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
+#cp -rf patch/qca/qca-nss-clients-64 package/qca/nss
+#cp -rf patch/qca/qca-nss-ecm-64 package/qca/nss
+#cp -rf patch/qca/qca-nss-drv-64 package/qca/nss
 #cp -rf patch/qca/qca-ssdk package/qca/nss
 #cp -rf patch/ipq807x target/linux
 #rm -rf target/linux/files
