@@ -25,14 +25,6 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 #sed -i s#github.com/Boos4721/packages.git#git.openwrt.org/feed/packages.git#g feeds.conf.default
 
 
-#修改内核版本
-#sed -i s/5.15/5.10/g target/linux/ipq807x/Makefile
-#sed -i s/110/115/g include/kernel-5.10.mk
-#sed -i s/dbef6a06325433481551cb8cfca9254d908d0ae950bc809f3da8ade00c485693/f5e417b32f89318b6d0a230109a592ffd68997817463dc4692fa49ec7fe42f71/g include/kernel-5.10.mk
-#sed -i s/6f8631b6c382a2b0cfeff1e5f8805c8e1cfbe8d714b6e65f5bb79733c99068eb/f5e417b32f89318b6d0a230109a592ffd68997817463dc4692fa49ec7fe42f71/g include/kernel-version.mk
-#sed -i s/.88/.115/g include/kernel-version.mk
-
-
 #更换版本
 #rm -rf package/qca/nss/qca-ssdk
 #rm -rf package/qca/nss/qca-nss-dp
@@ -57,10 +49,10 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 rm -rf package/openwrt-packages/firewall
 rm -rf package/openwrt-packages/shortcut-fe
-#rm -rf feeds/packages/net/miniupnpd
-#rm -rf package/packages/net/miniupnpd
-rm -rf package/openwrt-packages/miniupnpd
-rm -rf package/openwrt-packages/miniupnpd-nft
+rm -rf feeds/packages/net/miniupnpd
+rm -rf package/packages/net/miniupnpd
+#rm -rf package/openwrt-packages/miniupnpd
+#rm -rf package/openwrt-packages/miniupnpd-nft
 #rm -rf package/openwrt-packages/fullconenat
 #rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
 
