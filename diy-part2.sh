@@ -57,10 +57,10 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 rm -rf package/openwrt-packages/firewall
 rm -rf package/openwrt-packages/shortcut-fe
-rm -rf feeds/packages/net/miniupnpd
-rm -rf package/packages/net/miniupnpd
-#rm -rf package/openwrt-packages/miniupnpd
-#rm -rf package/openwrt-packages/miniupnpd-nft
+#rm -rf feeds/packages/net/miniupnpd
+#rm -rf package/packages/net/miniupnpd
+rm -rf package/openwrt-packages/miniupnpd
+rm -rf package/openwrt-packages/miniupnpd-nft
 #rm -rf package/openwrt-packages/fullconenat
 #rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
 
