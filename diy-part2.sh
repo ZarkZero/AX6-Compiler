@@ -64,8 +64,8 @@ rm -rf package/luci/applications/luci-app-upnp
 #rm -rf package/luci/applications/luci-app-ddns
 #rm -rf feeds/luci/applications/luci-app-firewall
 #rm -rf package/luci/applications/luci-app-firewall
-rm -rf package/openwrt-packages/miniupnpd
-#rm -rf package/openwrt-packages/miniupnpd-nft
+#rm -rf package/openwrt-packages/miniupnpd
+rm -rf package/openwrt-packages/miniupnpd-nft
 #rm -rf package/openwrt-packages/fullconenat
 #rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
 
