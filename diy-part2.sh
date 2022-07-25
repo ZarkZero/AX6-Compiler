@@ -55,6 +55,12 @@ rm -rf package/openwrt-packages/firewall
 rm -rf package/openwrt-packages/shortcut-fe
 rm -rf feeds/packages/net/miniupnpd
 rm -rf package/packages/net/miniupnpd
+rm -rf feeds/luci/applications/luci-app-upnp
+rm -rf package/luci/applications/luci-app-upnp
+rm -rf feeds/luci/applications/luci-app-ddns
+rm -rf package/luci/applications/luci-app-ddns
+rm -rf feeds/luci/applications/luci-app-firewall
+rm -rf package/luci/applications/luci-app-firewall
 #rm -rf package/openwrt-packages/miniupnpd
 rm -rf package/openwrt-packages/miniupnpd-nft
 #rm -rf package/openwrt-packages/fullconenat
