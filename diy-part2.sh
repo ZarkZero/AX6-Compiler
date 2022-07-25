@@ -20,6 +20,8 @@
 #修正
 svn co https://github.com/ZarkZero/AX6-Compiler/trunk/patch
 cp -f patch/mac80211.sh package/kernel/mac80211/files/lib/wifi
+rm -rf package/kernel/mac80211/ath.mk
+cp -f patch/ath.mk package/kernel/mac80211
 sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 #sed -i s#Boos4721/packages.git#coolsnowwolf/packages.git#g feeds.conf.default
 #sed -i s#github.com/Boos4721/packages.git#git.openwrt.org/feed/packages.git#g feeds.conf.default
