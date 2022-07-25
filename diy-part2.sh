@@ -56,7 +56,7 @@ rm -rf package/openwrt-packages/shortcut-fe
 rm -rf feeds/packages/net/miniupnpd
 rm -rf package/packages/net/miniupnpd
 #rm -rf package/openwrt-packages/miniupnpd
-#rm -rf package/openwrt-packages/miniupnpd-nft
+rm -rf package/openwrt-packages/miniupnpd-nft
 #rm -rf package/openwrt-packages/fullconenat
 #rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
 
