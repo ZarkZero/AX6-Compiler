@@ -1,6 +1,6 @@
 --- a/Makefile.linux
 +++ b/Makefile.linux
-@@ -26,15 +26,15 @@ CONFIG_OPTIONS ?= $(cat .configure.cache
+@@ -25,15 +25,15 @@ CONFIG_OPTIONS ?= $(cat .configure.cache
  CONFIG_OPTIONS += --firewall=iptables
  #CFLAGS = -O -g -DDEBUG
  CFLAGS ?= -Os
