@@ -21,7 +21,7 @@
 svn co https://github.com/ZarkZero/AX6-Compiler/trunk/patch
 cp -f patch/mac80211.sh package/kernel/mac80211/files/lib/wifi
 cp -f patch/ath.mk package/kernel/mac80211
-cp -f patch/mac80211.mk package/kernel/mac80211/Makefile
+#cp -f patch/mac80211.mk package/kernel/mac80211/Makefile
 
 sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 #sed -i s#Boos4721/packages.git#coolsnowwolf/packages.git#g feeds.conf.default
@@ -58,8 +58,8 @@ rm -rf package/openwrt-packages/firewall
 rm -rf package/openwrt-packages/shortcut-fe
 rm -rf feeds/packages/net/miniupnpd
 rm -rf package/packages/net/miniupnpd
-rm -rf feeds/luci/applications/luci-app-upnp
-rm -rf package/luci/applications/luci-app-upnp
+#rm -rf feeds/luci/applications/luci-app-upnp
+#rm -rf package/luci/applications/luci-app-upnp
 #rm -rf feeds/luci/applications/luci-app-ddns
 #rm -rf package/luci/applications/luci-app-ddns
 #rm -rf feeds/luci/applications/luci-app-firewall
