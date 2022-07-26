@@ -52,6 +52,7 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 #svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ttyd package/openwrt-packages/luci-app-ttyd
 svn co https://github.com/openwrt/packages/trunk/utils/ttyd package/openwrt-packages/ttdy
+rm -rf package/openwrt-packages/miniupnpd-nft/patches/500-0002-check-libcap-first.patch
 cp -f patch/miniupnpd-nft.mk package/openwrt-packages/miniupnpd/Makefile
 rm -rf package/openwrt-packages/firewall
 rm -rf package/openwrt-packages/shortcut-fe
