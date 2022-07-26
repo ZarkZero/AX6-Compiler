@@ -52,8 +52,8 @@ sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
 git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 #svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ttyd package/openwrt-packages/luci-app-ttyd
 svn co https://github.com/openwrt/packages/trunk/utils/ttyd package/openwrt-packages/ttdy
-cp -f patch/miniupnpd-nft.patch package/openwrt-packages/miniupnpd-nft/patches/200-remove-default-cflags.patch
-#rm -rf package/openwrt-packages/miniupnpd-nft/patches/200-remove-default-cflags.patch
+#cp -f patch/miniupnpd-nft.patch package/openwrt-packages/miniupnpd-nft/patches/200-remove-default-cflags.patch
+rm -rf package/openwrt-packages/miniupnpd-nft/patches/200-remove-default-cflags.patch
 rm -rf package/openwrt-packages/firewall
 rm -rf package/openwrt-packages/shortcut-fe
 rm -rf feeds/packages/net/miniupnpd
