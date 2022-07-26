@@ -53,18 +53,18 @@ git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packag
 #svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ttyd package/openwrt-packages/luci-app-ttyd
 svn co https://github.com/openwrt/packages/trunk/utils/ttyd package/openwrt-packages/ttdy
 rm -rf package/openwrt-packages/miniupnpd-nft/patches/500-0002-check-libcap-first.patch
-cp -f patch/miniupnpd-nft.mk package/openwrt-packages/miniupnpd/Makefile
+cp -f patch/miniupnpd-nft.mk feeds/packages/net/miniupnpd/Makefile
 rm -rf package/openwrt-packages/firewall
 rm -rf package/openwrt-packages/shortcut-fe
-rm -rf feeds/packages/net/miniupnpd
-rm -rf package/packages/net/miniupnpd
+#rm -rf feeds/packages/net/miniupnpd
+#rm -rf package/packages/net/miniupnpd
 #rm -rf feeds/luci/applications/luci-app-upnp
 #rm -rf package/luci/applications/luci-app-upnp
 #rm -rf feeds/luci/applications/luci-app-ddns
 #rm -rf package/luci/applications/luci-app-ddns
 #rm -rf feeds/luci/applications/luci-app-firewall
 #rm -rf package/luci/applications/luci-app-firewall
-#rm -rf package/openwrt-packages/miniupnpd
+rm -rf package/openwrt-packages/miniupnpd
 rm -rf package/openwrt-packages/miniupnpd-nft
 #rm -rf package/openwrt-packages/fullconenat
 #rm -rf target/linux/ipq807x/files/arch/arm64/boot/dts/qcom/ipq8074-ess.dtsi
