@@ -53,7 +53,7 @@ git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packag
 #svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ttyd package/openwrt-packages/luci-app-ttyd
 svn co https://github.com/openwrt/packages/trunk/utils/ttyd package/openwrt-packages/ttdy
 rm -rf package/openwrt-packages/miniupnpd-nft/patches
-#cp -f patch/miniupnpd-nft.mk feeds/packages/net/miniupnpd/Makefile
+cp -f patch/miniupnpd-nft.mk package/openwrt-packages/miniupnpd-nft/Makefile
 rm -rf package/openwrt-packages/firewall
 rm -rf package/openwrt-packages/shortcut-fe
 rm -rf feeds/packages/net/miniupnpd
