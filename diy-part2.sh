@@ -20,7 +20,7 @@
 #修正
 svn co https://github.com/ZarkZero/AX6-Compiler/trunk/patch
 cp -f patch/mac80211.sh package/kernel/mac80211/files/lib/wifi
-#cp -f patch/ath.mk package/kernel/mac80211
+cp -f patch/ath.mk package/kernel/mac80211
 #cp -f patch/mac80211.mk package/kernel/mac80211/Makefile
 
 sed -i s/10.10.10.1/192.168.1.1/g package/base-files/files/bin/config_generate
