@@ -1033,7 +1033,7 @@ function bubbleDismiss()
 			renderPeriods();
 		}
 
-		xhr.open('GET', 'http://whatsup.dynv6.net/luci-static/oui.json', true);
+		xhr.open('GET', 'http://lagrande.dynv6.net/luci-static/oui.json', true);
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState === 4) {
 				try { res = JSON.parse(xhr.responseText); }
